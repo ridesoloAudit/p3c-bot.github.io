@@ -1,0 +1,44 @@
+body {
+  background: rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+
+.ui.header {
+  color: #fef;
+}
+
+.ui.header .sub.header {
+  color: #efe;
+}
+.ui.segment {
+  background: #2c2b2a;
+}
+a {
+  color: #ff41ff;
+}
+
+.ui.button {
+  color: #eee;
+  background: #404142;
+}
+
+i.inverted.bordered.blue.icon,
+i.inverted.circular.blue.icon {
+  background: #ff41ff !important;
+  color: #000 !important;
+}
+
+.ui.form input:not([type]),
+.ui.form input[type='date'],
+.ui.form input[type='datetime-local'],
+.ui.form input[type='email'],
+.ui.form input[type='file'],
+.ui.form input[type='number'],
+.ui.form input[type='password'],
+.ui.form input[type='search'],
+.ui.form input[type='tel'],
+.ui.form input[type='text'],
+.ui.form input[type='time'],
+.ui.form input[type='url'] {
+  background: #6a6b6c;
+}
