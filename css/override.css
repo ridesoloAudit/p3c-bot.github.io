@@ -17,6 +17,10 @@ a {
   color: #ff41ff;
 }
 
+a:hover {
+  color: #41ff6a;
+}
+
 .ui.button {
   color: #eee;
   background: #404142;
