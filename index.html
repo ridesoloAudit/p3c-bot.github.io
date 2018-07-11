@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>PoWH3C - Token Interface</title>
+	<title>P3C.io</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
 	<link rel="stylesheet" href="css/alertify.css">
 	<link rel="icon" type="image/png" href="img/232.png">
@@ -157,7 +157,7 @@
 					<img="img/powh.png" </img>
 						<img src="img/powh.png">
 						<div class="sub header">An entirely autonomous game of UBI. This website is just one portal to a <a href="https://etherhub.io/addr/0xdf9aac76b722b08511a4c561607a9bf3afa62e49#tab_addr_3">smart contract.</a> Don't trust, verify!</div>
-						<div class="sub header">Fork of the <a href="https://etherscan.io/address/0xb3775fb83f7d12a36e0475abdd1fca35c091efbe">P3D</a> contract, on Ethereum Classic.
+						<div class="sub header">Secured by Ethereum Classic: the smart contract cannot be changed or controlled.</div>
 						<div class="sub header">Please use <a href="https://chrome.google.com/webstore/detail/saturn-wallet/nkddgncdjgjfcddamfgcmfnlhccnimig">Saturn Wallet</a> to interact (disable Metamask while using).</div>
 						<div class="sub header"><b>Instructions:</b> Buy tokens. Earn dividends from other players. Try to hold on! <a href="https://discord.gg/crjsdJr">Any questions?</a></div>
 				</h2>
@@ -176,24 +176,6 @@
 		<div class="column">
 			<div class="ui raised segment">
 				<div class="ui grid app testframe">
-					<div class="row">
-						<div class="column masternode hidden" style="text-align: center;">
-							<h2>You are currently holding enough tokens to run a Masternode!</h2>
-							<img src="img/ahhh-shit-browsers4.gif" alt="">
-							<!--<p>You are currently holding 100 or more tokens, this means you're now running a Masternode! <br> You receive <strong>30% of the dividends</strong> made by anyone purchasing tokens with your masternode link.</p> -->
-							<p>You receive
-								<strong>33%</strong> of the community fee when someone buys in via your link! This does not affect how many tokens they purchase.</p>
-							<div class="link">
-								<span>Your unique masternode link is (share this for the bonus):</span>
-								<a href="/?masternode=0x">https://p3c.io/index.html?masternode=0x123456</a>
-							</div>
-							<br>
-							<a href="https://discord.gg/crjsdJr" target="_new">
-								<button class="ui huge button">Join Community</button>
-							</a>
-							<div class="ui divider"></div>
-						</div>
-					</div>
 					<div class="two column row divided">
 						<div class="column buy">
 							<h2 class="ui aligned icon header">
@@ -229,7 +211,7 @@
 						</div>
 						<div class="column sell">
 							<h2 class="ui aligned icon header">
-								<img src="img/sell.png" alt=""> SELL
+								<img src="img/sell.png" alt=""> Sell
 							</h2>
 							<p>Unit = P3C Tokens</p>
 							<p></p>
@@ -295,6 +277,10 @@
 														<img class="ui medium circular image" src="https://media.discordapp.net/attachments/401301420575293440/415274787578052618/PowH_Logo_V2_Glow_Final_Concept_invert.png?width=522&height=576">
 														<b id="tokensInCirculation">- tokens</b> in circulation.
 													</span>
+													<span class="rainmaker">
+														<img class="ui medium circular image" src="img/232.png">
+														<b id="rainMakerDividends"></b> ETC in community fund.
+													</span>
 												</div>
 											</div>
 										</div>
@@ -343,17 +329,35 @@
 											</div>
 											<div class="row">
 												<div class="column">
-													<button id="reinvest" class="ui huge button">Reinvest dividends</button>
-													<button id="withdraw" class="ui huge button">Withdraw dividends</button>
+													<button id="reinvest" class="ui huge button">Reinvest Dividends</button>
+													<button id="withdraw" class="ui huge button">Withdraw Dividends</button>
 													<a href="https://etherhub.io/addr/0xdf9aac76b722b08511a4c561607a9bf3afa62e49#tab_addr_3" target="_new">
 														<button class="ui huge button">View Contract</button>
 													</a>
+													<button id="makeItRain" class="ui huge button">Distribute Community Fund</button>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column masternode hidden" style="text-align: center;">
+							<div class="ui divider"></div>
+							<h2>You are currently holding enough tokens to run a Masternode!</h2>
+							<img src="img/ahhh-shit-browsers4.gif" alt="">
+							<!--<p>You are currently holding 100 or more tokens, this means you're now running a Masternode! <br> You receive <strong>30% of the dividends</strong> made by anyone purchasing tokens with your masternode link.</p> -->
+							<p>You receive
+								<strong>33%</strong> of the community fee when someone buys tokens via your link! This does not affect how many tokens they purchase.</p>
+							<div class="link">
+								<a href="/?masternode=0x">https://p3c.io/index.html?masternode=0x123456</a>
+							</div>
+							<br>
+							<a href="https://discord.gg/crjsdJr" target="_new">
+								<button class="ui huge button">Join Community</button>
+							</a>
 						</div>
 					</div>
 					<div class="row">
@@ -417,7 +421,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
 	<script src="lib/web3.min.js"></script>
 	<script src="lib/buy.js"></script>
-
+	<script src="lib/rainmaker.js"></script>
 </body>
 
 </html>
