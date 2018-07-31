@@ -108,6 +108,13 @@ input[type='text']:focus {
   margin-right: 0.75rem;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 input[type='text'],
 textarea {
   -webkit-transition: all 0.3s ease-in-out !important;
