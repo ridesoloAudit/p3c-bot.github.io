@@ -51,6 +51,13 @@ a {
   text-shadow: 0.2vh 0.2vh #111;
   font-weight: thin;
 }
+
+.qtip {
+  background-color: #c2e0b2 !important;
+  border: #000;
+  font-size: 13px;
+}
+
 a:hover {
   color: #c2e0b2 !important;
   text-shadow: 0.1vh 0.1vh #000 !important;

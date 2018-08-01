@@ -6,6 +6,7 @@
 	<title>P3C.io</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
 	<link rel="stylesheet" href="css/alertify.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css">
 	<link rel="icon" type="image/png" href="img/232.png">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	 crossorigin="anonymous">
@@ -292,7 +293,6 @@
 											</div>
 											<div class="row">
 												<div class="column app stats textual">
-
 													<span class="eth">
 														<img class="ui medium circular image" src="img/etc_new.png">
 														<b id="ethInContract">- ethereum classic</b> in contract.
@@ -301,7 +301,7 @@
 														<img class="ui medium circular image" src="https://media.discordapp.net/attachments/401301420575293440/415274787578052618/PowH_Logo_V2_Glow_Final_Concept_invert.png?width=522&height=576">
 														<b id="tokensInCirculation">- tokens</b> in circulation.
 													</span>
-													<span class="rainmaker">
+													<span id="rainMaker"class="rainmaker">
 														<img class="ui medium circular image" src="img/232.png">
 														<b id="rainMakerDividends"></b> ETC in community fund.
 													</span>
@@ -444,7 +444,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
 	<script src="lib/web3.min.js"></script>
 	<script src="lib/buy.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
 	<script src="lib/rainmaker.js"></script>
+
 </body>
 
 </html>
