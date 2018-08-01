@@ -21,7 +21,7 @@ body {
 .ui.header {
   background: rgba(16, 103, 48, 0.6);
   color: #fef;
-  padding: 4vh;
+  padding: 3vh;
   text-align: left;
   text-shadow: 0.2vh 0.2vh #000;
 }
@@ -29,7 +29,7 @@ body {
 .ui.header .sub.header {
   font-size: 18px !important;
   color: #fff;
-  line-height: 4vh;
+  line-height: 3vh;
   font-weight: thin;
   font-family: Aileron;
 }
