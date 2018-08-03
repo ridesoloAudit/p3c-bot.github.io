@@ -3,6 +3,14 @@ body
     color: rgba(0,0,0,.7) !important;
 }
 
+.ui.button.large {
+    font-size:1.3em;
+}
+
+.ethereum.icon {
+    color:#348F50;
+};
+  
 .ui.header { color: #34495e; }
 .ui.table { color: rgba(0,0,0,.65); }
 .ui.table thead th { color: #7f8c8e; }
