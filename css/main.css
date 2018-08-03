@@ -1,0 +1,104 @@
+body
+{
+    color: rgba(0,0,0,.7) !important;
+}
+
+.ui.header { color: #34495e; }
+.ui.table { color: rgba(0,0,0,.65); }
+.ui.table thead th { color: #7f8c8e; }
+
+.divider {
+    width: 100%; background-color: #eee;
+}
+
+.border.right {
+    border-right: 1px solid #eee;
+}
+
+.border.left {
+    border-left: 1px solid #eee;
+}
+
+
+.margin-left.half {
+    margin-left: 0.5em;
+}
+
+/* ----------- */
+/* Margin Top */
+/* ----------- */
+.margin.top.one {
+    margin-top:1em;
+}
+
+.margin.top.one.and.half {
+    margin-top:1.5em;
+}
+
+.margin.top.two {
+    margin-top:2em;
+}
+
+.margin.top.two.and.half {
+    margin-top:2.5em;
+}
+
+.margin.top.seven {
+    margin-top:7em;
+}
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/* ----------- */
+/* Margin Bottom */
+/* ----------- */
+.margin.bottom.two {
+    margin-bottom: 2em;
+}
+
+
+/* ----------- */
+/* Width */
+/* ----------- */
+.width.one.and.eight {
+    width:1.8em;
+}
+
+
+.gradient.mauve {
+    background: #42275a !important;
+    background: -webkit-linear-gradient(to left, #42275a , #734b6d) !important;
+    background: linear-gradient(to left, #42275a , #734b6d) !important;
+}
+
+.gradient.frost {
+
+
+background: #000428; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #000428 , #004e92); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000428 , #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.gradient.emerald
+{
+    background: #348F50 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #56B4D3, #348F50) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #56B4D3, #348F50) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.opacity {
+    background-color: rgba(0,0,0,.2);
+    padding:10px;
+    border-radius:5px;
+}
+
+.small
+{
+    font-size:0.5em;
+}

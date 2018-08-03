@@ -1,452 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>P3C.io</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
-	<link rel="stylesheet" href="css/alertify.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css">
-	<link rel="icon" type="image/png" href="img/232.png">
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	 crossorigin="anonymous">
-	</script>
-	<style>
-		.app.testframe .buy,
-		.app.testframe .sell,
-		.app.testframe .transfer {
-			text-align: center;
-		}
-
-		.app.testframe .buy input,
-		.app.testframe .sell input,
-		.app.testframe .transfer input {
-			text-align: center;
-			font-size: 25px;
-		}
-
-		.no-padding {
-			padding-top: 0 !important;
-			padding-bottom: 0 !important;
-		}
-
-		.approx {
-			font-size: 22px;
-			font-style: italic;
-			color: #949494;
-		}
-
-		.app.interface {}
-
-		.app.interface.loaded {
-			display: initial;
-		}
-
-		.app.stats.bubble span {
-			display: block;
-		}
-
-		.app.stats.bubble span.count {
-			margin-top: 12px;
-			font-size: 32px;
-			font-style: italic;
-		}
-
-		.app.stats.bubble span.identifier {
-			font-size: 20px;
-			font-weight: bold;
-		}
-
-		.app.stats.bubble span.identifier .soft {
-			font-weight: 300;
-			font-size: 15px;
-		}
-
-		.app.stats.bubble span.converted {
-			margin-top: 10px;
-		}
-
-		.app.stats.textual {
-			text-align: center;
-		}
-
-		.app.stats.textual span {
-			display: block;
-			font-size: 18px;
-			margin-bottom: 15px;
-		}
-
-		.app.stats.textual span img {
-			background: #eadfdf;
-			padding: 5px;
-			margin: 0 auto;
-			width: 60px;
-		}
-
-		.actions .button {
-			margin-bottom: 15px;
-			width: 100%;
-		}
-
-		.masternode.hidden {
-			display: none !important;
-		}
-
-		.masternode img {
-			width: 115px;
-		}
-
-		.masternode h2 {
-			font-weight: bold;
-			font-style: italic;
-		}
-
-		.masternode p {
-			padding-bottom: 15px;
-		}
-
-		.masternode .link span {
-			font-size: 22px;
-			display: block;
-			padding-bottom: 13px;
-		}
-
-		.masternode .link a {
-			font-size: 25px;
-		}
-
-		.buy .button,
-		.sell .button {
-			width: 100%;
-		}
-
-		.buy .six.wide.column,
-		.sell .six.wide.column {
-			text-align: center !important;
-		}
-
-		.buy .six.wide.column .buyPrice,
-		.buy .six.wide.column .sellPrice,
-		.sell .six.wide.column .buyPrice,
-		.sell .six.wide.column .sellPrice {
-			display: block;
-			font-size: 20px;
-			padding-bottom: 5px;
-		}
-
-		.transfer p {
-			text-align: center;
-		}
-
-		.transfer button {
-			width: 100%;
-		}
-
-		.transfer input {
-			height: 50px;
-			font-size: 20px !important;
-		}
-	</style>
-	<link rel="stylesheet" href="css/override.css">
+    <title>P3C.io</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/alertify.css">
+    <link rel="icon" type="image/svg" href="img/whale.svg">
 </head>
 
 <body>
-	<ui class="ui centered grid container intro" style="margin-top:10px;">
-		<div class="row">
-			<div class="column" style="text-align: center;">
-				<div class="ui header">
-					<img src="img/powh.png" style="display: block; margin: 0 auto; height:72px; width:auto; border-radius: 0px;" alt="">
-					<div class="sub header">
-						<h2>
-							Proof of Weak Hands (P3D) on Ethereum Classic. Absolute immutability.</h2>
-						<p>
-							This website is just one portal to a
-							<a href="https://etherhub.io/addr/0xdf9aac76b722b08511a4c561607a9bf3afa62e49#tab_addr_3" target="_new">smart contract.</a>
-						</p>
-					</div>
-					<div class="sub header">
-						<p>
-							Secured by <b>Ethereum Classic</b>: the smart contract cannot be changed or controlled. Uses the original P3D contract.
-						</p>
-					</div>
-					<br>
-					<div class="sub header">
-						<h3>Instructions:</h3>
-						<p>
-							Please use
-							<a target="_new" href="https://chrome.google.com/webstore/detail/saturn-wallet/nkddgncdjgjfcddamfgcmfnlhccnimig">Saturn Wallet</a> to interact (disable Metamask while using).
-							<a target="_new" href="https://p3c.hostedwiki.co/pages/P3C%20-%20Explained">Check out our wiki!</a> <a target="_new" href="https://discord.gg/crjsdJr">Ask us questions.</a>
-							<br>
-							<b>Rules</b>: Buy tokens from this site. Earn dividends from other players. How long can you hold on?
-						</p>
-						<div  style="text-align: center">
-							<a style="background: none"  href="https://discord.gg/crjsdJr" target="_new">
-								<button class="ui huge button">Join Community</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div class="ui fixed large inverted menu gradient emerald">
+        <div class="ui container"><a class="header item"><img src="img/whale.svg" class="ui mini image"/></a>
+            <a class="header item">
+                <h2>P3C.io</h2></a><a class="item">Dashboard</a>
+            <div class="right menu">
+                <div class="item">
+                    <div class="opacity"><strong><i class="ethereum icon"></i><span>Contract:&nbsp;</span></strong><span id="ethInContract">0 ETC</span></div>
+                </div>
+                <div class="item">
+                    <div class="opacity"><strong><i class="paw icon"></i><span>Tokens:&nbsp;</span></strong><span id="tokensInCirculation">0</span> P3C</div>
+                </div>
+                <div class="item">
+                    <div class="opacity" data-tooltip="The amount of dividends the RainMaker contract currently holds. It can only ever reinvest them!" data-position="bottom right" data-inverted=""><strong><i class="heartbeat icon"></i><span>Community:&nbsp;</span></strong><span id="rainMakerDividends">0</span> ETC</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	</ui>
-	<!-- 	<div class="ui grid container app loader">
-		<div class="column">
-			<h1 class="ui header">
-				Loading...
-			</h1>
-		</div>
-	</div> -->
-	<div class="ui grid container app interface">
-		<div class="column">
-			<div class="ui raised segment">
-				<div class="ui grid app testframe">
-					<div class="two column row divided">
-						<div class="column buy">
-							<h2 class="ui aligned icon header">
-								<img src="img/spin-red-up.gif" alt=""> Buy
-							</h2>
-							<p>Unit = Ethereum Classic </p>
-							<div class="ui divider"></div>
-							<div class="ui centered grid">
-								<div class="row">
-									<div class="six wide column">
-										<span class="buyPrice">1234/token</span>
-										<form class="ui form">
-											<div class="field">
-												<input type="text" name="first-name" placeholder="0.05">
-											</div>
-										</form>
-									</div>
-								</div>
-								<div class="row no-padding">
-									<div class="column" style="text-align: center;">
-										<span class="approx">Type in a number...</span>
-									</div>
-								</div>
-								<div class="row">
-									<div class="six wide column">
-										<button class="ui right labeled massive icon button">
-											<i class="right arrow icon"></i>
-											Buy
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="column sell">
-							<h2 class="ui aligned icon header">
-								<img src="img/spin-green-down.gif" alt=""> Sell
-							</h2>
-							<p>Unit = P3C Tokens</p>
-							<p></p>
-							<div class="ui divider"></div>
-							<div class="ui centered grid">
-								<div class="row">
-									<div class="six wide column">
-										<span class="sellPrice">1234/token</span>
-										<form class="ui form">
-											<div class="field">
-												<input type="text" name="first-name" placeholder="25">
-											</div>
-										</form>
-									</div>
-								</div>
-								<div class="row no-padding">
-									<div class="column" style="text-align: center;">
-										<span class="approx">Type in a number....</span>
-									</div>
-								</div>
-								<div class="row">
-									<div class="six wide column">
-										<button class="ui right labeled massive icon button">
-											<i class="right arrow icon"></i>
-											Sell
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ui divider"></div>
-				<div class="ui grid">
-					<div class="row">
-						<div class="column" style="text-align: center;">
-							<h2 class="ui header">
-								Holdings (Make sure you have <a target="_new" href="https://chrome.google.com/webstore/detail/saturn-wallet/nkddgncdjgjfcddamfgcmfnlhccnimig">Saturn Wallet enabled</a>, and Metamask turned off)
-							</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="column">
-							<div class="ui internally celled grid">
-								<div class="three column row">
-									<div class="column">
-										<div class="ui grid">
-											<div class="row no-padding">
-												<div class="column" style="text-align: center;">
-													<h2 class="ui header">
-														Global
-													</h2>
-												</div>
-											</div>
-											<div class="row">
-												<div class="column app stats textual">
-													<span class="eth">
-														<img class="ui medium circular image" src="img/etc_new.png">
-														<b id="ethInContract">- ethereum classic</b> in contract.
-													</span>
-													<span class="tokens">
-														<img class="ui medium circular image" src="https://media.discordapp.net/attachments/401301420575293440/415274787578052618/PowH_Logo_V2_Glow_Final_Concept_invert.png?width=522&height=576">
-														<b id="tokensInCirculation">- tokens</b> in circulation.
-													</span>
-													<span id="rainMaker"class="rainmaker">
-														<img class="ui medium circular image" src="img/232.png">
-														<b id="rainMakerDividends"></b> ETC in community fund.
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="column">
-										<div class="ui grid">
-											<div class="row no-padding">
-												<div class="column" style="text-align: center;">
-													<h2 class="ui header">
-														Wallet
-													</h2>
-												</div>
-											</div>
-											<div class="row">
-												<div class="column eight wide app stats bubble" id="myTokens">
-													<div class="ui circular segment">
-														<span class="identifier">Tokens
-															<span class="soft">(P3C)</span>
-														</span>
-														<span class="count">-</span>
-														<span class="converted">(-USDT)</span>
+    <div class="ui container margin top seven">
 
-													</div>
-												</div>
-												<div class="column eight wide app stats bubble" id="myDividends">
-													<div class="ui circular segment">
-														<span class="identifier">Dividends
-															<span class="soft">(ETC)</span>
-														</span>
-														<span class="count">-</span>
-														<span class="converted">(-USDT)</span>
+        <div class="ui active inverted dimmer" id="loadingSpinner">
+            <div class="ui massive text loader" id="loadingText">Connecting with Saturn...
+                <br>
+                <noscript>You need to enable JavaScript to run this app.</noscript>
+            </div>
+        </div>
 
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="column actions">
-										<div class="ui grid">
-											<div class="row no-padding">
-												<div class="column" style="text-align: center;">
-													<h2 class="ui header">
-														Actions
-													</h2>
-												</div>
-											</div>
-											<div class="row">
-												<div class="column">
-													<button id="reinvest" class="ui huge button">Reinvest Dividends</button>
-													<button id="withdraw" class="ui huge button">Withdraw Dividends</button>
-													<a href="https://etherhub.io/addr/0xdf9aac76b722b08511a4c561607a9bf3afa62e49#tab_addr_3" target="_new">
-														<button class="ui huge button">View Contract</button>
-													</a>
-													<button id="makeItRain" class="ui huge button">Distribute Community Fund</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="column masternode hidden" style="text-align: center;">
-							<div class="ui divider"></div>
-							<h2>You are currently holding enough tokens to run a Masternode!</h2>
-							<img src="img/phoenix.png" alt="">
-							<!--<p>You are currently holding 100 or more tokens, this means you're now running a Masternode! <br> You receive <strong>30% of the dividends</strong> made by anyone purchasing tokens with your masternode link.</p> -->
-							<p>You receive
-								<strong>33%</strong> of the community fee when someone buys tokens via your link! This does not affect how many tokens they
-								purchase.
-							</p>
-							<div class="link">
-								<a href="/?masternode=0x">https://p3c.io/index.html?masternode=0x123456</a>
-							</div>
-							<br>
-						</div>
-					</div>
-					<div class="row">
-						<div class="column transfer">
-							<div class="ui divider"></div>
-							<h2 class="ui aligned icon header">
-								<i class="circular inverted blue exchange alternate icon"></i>
-								TRANSFER
-							</h2>
-							<p>Unit = Tokens: Be aware that sending tokens immediately withdraws your dividends so they're not lost!</p>
-							<div class="ui divider"></div>
-							<div class="ui centered grid">
-								<div class="row">
-									<div class="six wide column">
-										<form class="ui form">
-											<div class="field">
-												<input type="text" id="transferAddress" placeholder="Address..">
-											</div>
-										</form>
-									</div>
-								</div>
-								<div class="row">
-									<div class="six wide column">
-										<form class="ui form">
-											<div class="field">
-												<input type="text" id="transferTokenCount" placeholder="P3C Tokens..">
-											</div>
-										</form>
-									</div>
-								</div>
-								<div class="row no-padding">
-									<div class="column" style="text-align: center;">
-										<span class="approx">Type in a valid address and token amount..</span>
-									</div>
-								</div>
-								<div class="row">
-									<div class="six wide column">
-										<button class="ui right labeled massive icon button">
-											<i class="right arrow icon"></i>
-											Transfer
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ui active inverted dimmer" id="loadingSpinner">
-					<div class="ui massive text loader" id="loadingText">Connecting with Saturn...
-						<br>
-						<noscript>You need to enable JavaScript to run this app.</noscript>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="lib/ls.js"></script>
-	<script src="lib/alertify.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
-	<script src="lib/web3.min.js"></script>
-	<script src="lib/buy.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
-	<script src="lib/rainmaker.js"></script>
+        <div class="ui grid">
 
+            <div class="four wide column buy">
+                <h2 class="ui header"><img src="img/rewind-time.svg" class="width one and eight"/>
+          <div class="content"><span>Buy</span><span class="small"><a href="#">&nbsp;| Strong Hands</a></span>
+            <div class="sub header">Buy and earn. Be patient.</div>
+          </div>
+        </h2>
+
+                <div class="ui fluid large basic buttons" style="margin-top:10px; margin-bottom:10px;">
+                    <button class="ui button">
+                <i class="paw icon"></i>
+              <strong>1 |</strong>  P3C
+          </button>
+
+                    <button class="ui positive button">
+                <i class="ethereum icon"></i>
+              <strong><span class="buyPrice">0</span></strong>
+          </button>
+                </div>
+
+                <div class="ui right labeled left icon input fluid large buy">
+                    <i class="ethereum icon" style="color:#348F50;"></i>
+                    <input placeholder="1000 ETC" type="text">
+                    <a class="ui tag inverted label" style="background-color:#348F50;">
+          ETC
+        </a>
+                </div>
+
+                <div class="ui fluid large basic button approx" style="margin-top:10px; box-shadow: 0 0 0 1px #348F50 inset !important;
+    color: #348F50 !important;"><i>Type in a number...</i></div>
+
+                <button class="ui right labeled icon large fluid inverted button" style="margin-top:10px; background-color: #348F50 !important">
+  <i class="right paw icon"></i>
+  Buy
+</button>
+
+            </div>
+
+            <div class="eight wide column border right border left">
+                <h1 class="ui header"><img src="img/whale.svg" class="width one and eight"/>
+        <div class="content">Dashboard
+          <div class="sub header">Strong hands equals a large profit.</div>
+        </div>
+      </h1>
+
+                <div class="ui horizontal segments">
+
+                    <div class="ui circular segment" id="myTokens">
+                        <h2 class="ui header">
+          Tokens
+          <div class="sub header"><span class="count">0</span> P3C <sup> | <a href="#" class="converted">$0</a></sup></div>
+        </h2>
+                    </div>
+                    <div class="ui circular segment" id="myDividends">
+                        <h2 class="ui header">
+          Dividends
+          <div class="sub header"><span class="count">0</span> ETC <sup> | <a href="#" class="converted">$0</a></sup></div>
+        </h2>
+                    </div>
+                </div>
+
+                <div style="text-align:center">
+                    <button id="reinvest" class="ui button">Reinvest Dividends</button>
+
+                    <button id="makeItRain" class="ui teal button" data-tooltip="Cause the RainMaker to use its dividends to purchase tokens and distribute gains to all players!" data-inverted="">Distribute Community</button>
+
+                    <button id="withdraw" class="ui button">Withdraw Dividends</button>
+                </div>
+
+                <a class="fluid ui button" href="https://etherhub.io/addr/0xdf9aac76b722b08511a4c561607a9bf3afa62e49#tab_addr_3" style="margin-top:10px;" target="_new">Contract</a>
+
+
+            </div>
+            <div class="four wide column sell">
+                <h2 class="ui header"><img src="img/time-passing.svg" class="width one and eight"/>
+        <div class="content"><span>Sell</span><span class="small"><a href="#">&nbsp;| Weak Hands</a></span>
+          <div class="sub header">Sell with profit or loss.</div>
+        </div>
+      </h2>
+
+                <div class="ui fluid large basic buttons" style="margin-top:10px; margin-bottom:10px;">
+                    <button class="ui button">
+              <i class="paw icon"></i>
+            <strong>1 |</strong>  P3C
+        </button>
+
+                    <button class="ui positive button ">
+              <i class="ethereum icon"></i>
+            <strong><span class="sellPrice">0</span></strong>
+        </button>
+                </div>
+
+
+                <div class="ui right labeled left icon input fluid large">
+                    <i class="paw icon" style="color:#348F50;"></i>
+                    <input placeholder="1 P3C" type="text">
+                    <a class="ui tag inverted label" style="background-color:#56B4D3;">
+          P3C
+        </a>
+                </div>
+
+                <div class="ui fluid large basic button approx" style="margin-top:10px; box-shadow: 0 0 0 1px #56B4D3 inset !important;
+    color: #56B4D3!important;"><i>Type in a number...</i></div>
+
+                <button class="ui right labeled icon large fluid inverted button" style="margin-top:10px; background-color: #56B4D3 !important">
+  <i class="right paw icon"></i>
+  Sell
+</button>
+
+            </div>
+        </div>
+
+        <div style="background-color: #eee; height: 1px; margin-top:20px; margin-bottom:20px;"></div>
+
+        <div class="ui olive message">
+            <p> Holdings (Make sure you have <a target="_new" href="https://chrome.google.com/webstore/detail/saturn-wallet/nkddgncdjgjfcddamfgcmfnlhccnimig">Saturn Wallet enabled</a>, and Metamask turned off)
+            </p>
+        </div>
+
+        <div style="background-color: #eee; height: 1px; margin-top:20px; margin-bottom:20px;"></div>
+
+        <div class="ui grid">
+
+            <div class="eight wide column">
+
+                <div class="ui segments">
+                    <div class="ui segment">
+                        <h4 class="ui header">
+              Proof of Weak Hands (P3D) on Ethereum Classic. Absolute immutability.</h4>
+                    </div>
+                    <div class="ui segment">
+                        This website is just one portal to a
+                        <a href="https://etherhub.io/addr/0xdf9aac76b722b08511a4c561607a9bf3afa62e49#tab_addr_3" target="_new">smart contract.</a>
+                    </div>
+                    <div class="ui segment">
+                        <p>
+                            Secured by <b>Ethereum Classic</b>: the smart contract cannot be changed or controlled. Uses the original P3D contract.
+                        </p>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <a style="background: none" href="https://discord.gg/crjsdJr" target="_new">
+            <button class="ui fluid huge button">Join Community</button>
+        </a>
+                </div>
+
+                <div class="ui segments">
+                    <div class="ui segment">
+                        <h4 class="ui header">
+             Instructions:</h4>
+                    </div>
+                    <div class="ui segment">
+                        <p>
+                            Please use
+                            <a target="_new" href="https://chrome.google.com/webstore/detail/saturn-wallet/nkddgncdjgjfcddamfgcmfnlhccnimig">Saturn Wallet</a> to interact (disable Metamask while using).
+                        </p>
+                    </div>
+                    <div class="ui segment">
+                        <p>
+                            <a target="_new" href="https://p3c.hostedwiki.co/pages/P3C%20-%20Explained">Check out our wiki!</a> <a target="_new" href="https://discord.gg/crjsdJr">Ask us questions.</a>
+                        </p>
+                    </div>
+                    <div class="ui segment">
+                        <p>
+                            <b>Rules</b>: Buy tokens from this site. Earn dividends from other players. How long can you hold on? </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="eight wide column">
+
+
+
+                <div class="ui segments transfer">
+                    <div class="ui segment">
+                        <h4 class="ui header">
+              <i class="circular inverted blue exchange alternate icon"></i>
+              <div class="content">
+                Transfer
+                <div class="sub header">Unit = Tokens: Be aware that sending tokens immediately withdraws your dividends so they're not lost!</div>
+              </div>
+          </h4>
+                    </div>
+                    <div class="ui segment">
+                        <form class="ui form">
+                            <div class="field">
+                                <input type="text" id="transferAddress" placeholder="Address..">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ui segment">
+                        <form class="ui form">
+                            <div class="field">
+                                <input type="text" id="transferTokenCount" placeholder="P3C Tokens..">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ui segment">
+                        <span class="approx">Type in a valid address and token amount..</span>
+                    </div>
+                    <div class="ui segment">
+                        <button class="ui right labeled large icon fluid button">
+        <i class="right arrow icon"></i>
+        Transfer
+    </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    <div class="ui segments masternode hidden" style="text-align: center; margin-bottom:20px;">
+        <div class="ui segment">
+            <h2>You are currently holding enough tokens to run a Masternode!</h2>
+        </div>
+        <div class="ui segment">
+            <img src="img/phoenix.png" alt="">
+            <!--<p>You are currently holding 100 or more tokens, this means you're now running a Masternode! <br> You receive <strong>30% of the dividends</strong> made by anyone purchasing tokens with your masternode link.</p> -->
+            <p>You receive
+                <strong>33%</strong> of the community fee when someone buys tokens via your link! This does not affect how many tokens they purchase.
+            </p>
+            <div class="link">
+                <a href="/?masternode=0x">https://p3c.io/index.html?masternode=0x123456</a>
+            </div>
+            <br>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
+    <script src="lib/ls.js"></script>
+    <script src="lib/alertify.js"></script>
+    <script src="lib/buy.js"></script>
+    <script src="lib/rainmaker.js"></script>
 </body>
-
-</html>
