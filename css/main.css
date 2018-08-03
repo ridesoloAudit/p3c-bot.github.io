@@ -102,3 +102,11 @@ background: linear-gradient(to left, #56B4D3, #348F50) !important; /* W3C, IE 10
 {
     font-size:0.5em;
 }
+
+.buttonPrice
+{
+
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+
+}
