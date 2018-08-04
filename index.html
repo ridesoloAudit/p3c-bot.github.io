@@ -13,15 +13,16 @@
 </head>
 
 <body>
-    <div class="ui fixed large inverted menu gradient emerald">
+    <div class="ui large inverted stackable menu gradient emerald" style="border-radius:0px !important;">
         <div class="ui container">
             <a class="header item">
                 <img src="img/whale.svg" class="ui mini image" />
             </a>
-            <a class="header item">
+            <a class="header item" href="/">
                 <h2>P3C.io</h2>
             </a>
-            <a class="item">Dashboard</a>
+            <a class="item" href="/"><i class="ui bookmark outline icon"></i> Dashboard</a>
+            <a class="item" href="https://p3c.hostedwiki.co/pages/P3C%20-%20Explained" target="_blank"><i class="ui question circle outline icon"></i> Wiki</a>
             <div class="right menu">
                 <div class="item">
                     <a href="https://etherhub.io/addr/0xdf9aac76b722b08511a4c561607a9bf3afa62e49#tab_addr_3" target="_blank">
@@ -46,7 +47,7 @@
         </div>
     </div>
 
-    <div class="ui container margin top seven">
+    <div class="ui container margin top two">
 
         <div class="ui active inverted dimmer" id="loadingSpinner">
             <div class="ui massive text loader" id="loadingText">Connecting with Saturn...
@@ -55,50 +56,45 @@
             </div>
         </div>
 
-        <div class="ui grid">
+        <div class="ui stackable grid">
 
             <div class="four wide column buy">
                 <h2 class="ui header">
                     <img src="img/time-forward.svg" class="width one and eight" />
                     <div class="content">
                         <span>Buy</span>
-                        <span class="small">
-                            <a href="#">&nbsp;| Strong Hands</a>
-                        </span>
+                        <span class="ui green text small">&nbsp;| Strong Hands</span>
                         <div class="sub header">
                             <strong>Start here</strong>! Buy and earn.</div>
                     </div>
                 </h2>
 
                 <div class="ui fluid large basic buttons" style="margin-top:10px; margin-bottom:10px;">
-                    <button class="ui button buttonPrice">
+                    <div class="ui button price no click">
                         <i class="rocket icon"></i>
                         <strong>Price</strong>
-                    </button>
+                    </div>
 
-                    <button class="ui positive button buttonPrice">
+                    <div class="ui positive button price no click">
                         <i class="ethereum icon"></i>
                         <strong>
                             <span class="buyPrice" id="tokenBuyGet">0</span>
-                            <a href="#" style="font-size:11px;">| $
-                                <span id="tokenBuyPrice">0</span>
-                            </a>
+                            <span class="ui green text small eleven"> | $</span> <span class="ui green text small eleven" id="tokenBuyPrice">0</span>
                         </strong>
-                    </button>
+                    </div>
                 </div>
 
                 <div class="ui right labeled left icon input fluid large buy">
-                    <i class="ethereum icon" style="color:#348F50;"></i>
+                    <i class="ethereum green icon"></i>
                     <input placeholder="ETC to Spend..." type="text">
-                    <a class="ui tag inverted label" style="background-color:#348F50;">
+                    <div class="ui tag green label">
                         ETC
-                    </a>
+                    </div>
                 </div>
-                <button class="ui right labeled icon large fluid inverted button" style="margin-top:10px; background-color: #348F50 !important">
+                <button class="ui large fluid green button" style="margin-top:10px;">
                     Buy
                 </button>
-                <div class="ui fluid large basic button approx" style="margin-top:10px; box-shadow: 0 0 0 1px #348F50 inset !important;
-    color: #348F50 !important;">
+                <div class="ui fluid large basic green button approx no click" style="margin-top:10px;">
                     <i>How much will you buy?</i>
                 </div>
 
@@ -114,33 +110,37 @@
 
                 <div class="ui horizontal segments">
 
-                    <div class="ui circular segment" id="myTokens">
+                    <div class="ui padded center aligned segment" id="myTokens" style="width:35%;">
                         <h2 class="ui header">
                             My Tokens
                             <div class="sub header">
                                 <span class="count">0</span> P3C
-                                <sup> |
-                                    <a href="#" class="converted">$0</a>
-                                </sup>
+                                <div class="ui teal text small eleven">
+                                    <span class="converted" style="font-weight:bold;">$0<span>
+                                </div>
                             </div>
                         </h2>
                     </div>
-                    <div class="ui circular segment" id="myDividends">
+                    <div class="ui padded center aligned segment" id="myDividends">
                         <h2 class="ui header">
                             My Dividends
                             <div class="sub header">
                                 <span class="count">0</span> ETC
-                                <sup> |
-                                    <a href="#" class="converted">$0</a>
-                                </sup>
+                                <div class="ui teal text small eleven">
+                                    <span class="converted" style="font-weight:bold;">$0<span>
+                                </div>
                             </div>
                         </h2>
                     </div>
                 </div>
 
-                <div style="text-align:center">
-                    <button id="reinvest" class="ui teal button large">Reinvest My Dividends</button>
-                    <button id="withdraw" class="ui teal button large">Withdraw My Dividends</button>
+                <div class="ui two column centered grid">
+                    <div class="column">
+                        <button id="withdraw" class="ui teal fluid button large">Withdraw My Dividends</button>
+                    </div>
+                    <div class="column">
+                        <button id="reinvest" class="ui teal fluid button large">Reinvest My Dividends</button>
+                    </div>
                 </div>
 
             </div>
@@ -149,43 +149,38 @@
                     <img src="img/time-backward.svg" class="width one and eight" />
                     <div class="content">
                         <span>Sell</span>
-                        <span class="small">
-                            <a href="#">&nbsp;| Weak Hands</a>
-                        </span>
+                        <span class="ui text blue small">&nbsp;| Weak Hands</span>
                         <div class="sub header">Sell now for a profit or loss.</div>
                     </div>
                 </h2>
 
                 <div class="ui fluid large basic buttons" style="margin-top:10px; margin-bottom:10px;">
-                    <button class="ui button buttonPrice">
+                    <div class="ui button price no click">
                         <i class="rocket icon"></i>
                         <strong>Price</strong>
-                    </button>
+                    </div>
 
-                    <button class="ui positive button buttonPrice">
+                    <div class="ui button price no click">
                         <i class="ethereum icon"></i>
                         <strong>
                             <span class="sellPrice" id="tokenSellGet">0</span>
-                            <a href="#" style="font-size:11px;">| $
-                                <span id="tokenSellPrice">0</span>
-                            </a>
+                            <span class="ui blue text small eleven"> | $</span> <span class="ui blue text small eleven" id="tokenSellPrice">0</span>
                         </strong>
-                    </button>
+                    </div>
                 </div>
 
 
                 <div class="ui right labeled left icon input fluid large">
-                    <i class="rocket icon" style="color:#348F50;"></i>
+                    <i class="rocket blue icon"></i>
                     <input placeholder="P3C to Sell..." type="text">
-                    <a class="ui tag inverted label" style="background-color:#56B4D3;">
+                    <span class="ui tag blue label">
                         P3C
-                    </a>
+                    </span>
                 </div>
-                <button class="ui right labeled icon large fluid inverted button" style="margin-top:10px; background-color: #56B4D3 !important">
+                <button class="ui large fluid blue button" style="margin-top:10px;">
                     Sell
                 </button>
-                <div class="ui fluid large basic button approx" style="margin-top:10px; box-shadow: 0 0 0 1px #56B4D3 inset !important;
-    color: #56B4D3!important;">
+                <div class="ui fluid large basic blue button no click approx" style="margin-top:10px;">
                     <i>How much will you sell?</i>
                 </div>
             </div>
@@ -201,7 +196,24 @@
 
         <div style="background-color: #eee; height: 1px; margin-top:20px; margin-bottom:20px;"></div>
 
-        <div class="ui grid">
+        <div class="ui segments masternode hidden">
+            <div class="ui segment">
+                <h4 class="ui header">You are currently holding enough tokens to run a Masternode!</h4>
+            </div>
+            <div class="ui secondary segment">
+                <div class="link">
+                    <a href="/?masternode=0x">https://p3c.io/index.html?masternode=0x123456</a>
+                </div>
+            </div>
+            <div class="ui segment">
+                <p>You receive
+                    <strong>33%</strong> of the community fee when someone buys tokens via your link! This does not affect how many
+                    tokens they purchase.
+                </p>
+            </div>
+        </div>
+
+        <div class="ui stackable grid">
 
             <div class="eight wide column">
 
@@ -220,7 +232,7 @@
                 </div>
                 <div style="text-align: center">
 
-                    <a href="https://discord.gg/crjsdJr" target="_blank" class="ui left labeled icon large fluid inverted button" style="margin-top:10px; background-color: #348F50 !important">
+                    <a href="https://discord.gg/crjsdJr" target="_blank" class="ui left labeled icon large fluid green button" style="margin-top:10px;">
                         <i class="left discord icon"></i>
                         Join Our Community
                     </a>
@@ -294,24 +306,6 @@
             </div>
         </div>
 
-
-        <div class="ui segments masternode hidden" style="text-align: center; margin-bottom:20px;">
-            <div class="ui segment">
-                <h2>You are currently holding enough tokens to run a Masternode!</h2>
-            </div>
-            <div class="ui segment">
-                <img src="img/phoenix.png" alt="">
-                <!--<p>You are currently holding 100 or more tokens, this means you're now running a Masternode! <br> You receive <strong>30% of the dividends</strong> made by anyone purchasing tokens with your masternode link.</p> -->
-                <p>You receive
-                    <strong>33%</strong> of the community fee when someone buys tokens via your link! This does not affect how many
-                    tokens they purchase.
-                </p>
-                <div class="link">
-                    <a href="/?masternode=0x">https://p3c.io/index.html?masternode=0x123456</a>
-                </div>
-                <br>
-            </div>
-        </div>
     </div>
 
 

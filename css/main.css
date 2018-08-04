@@ -3,14 +3,6 @@ body
     color: rgba(0,0,0,.7) !important;
 }
 
-.ui.button.large {
-    font-size:1.3em;
-}
-
-.ethereum.icon {
-    color:#348F50;
-};
-  
 .ui.header { color: #34495e; }
 .ui.table { color: rgba(0,0,0,.65); }
 .ui.table thead th { color: #7f8c8e; }
@@ -111,10 +103,90 @@ background: linear-gradient(to left, #56B4D3, #348F50) !important; /* W3C, IE 10
     font-size:0.5em;
 }
 
-.buttonPrice
+.button.price
 {
 
     padding-right: 15px !important;
     padding-left: 15px !important;
 
+}
+
+.small.eleven
+{
+    font-size: 11px !important;
+}
+
+.no.click
+{
+    cursor: default;
+}
+
+
+/*
+    SCHEMA
+*/
+.ui.green.label
+{
+    border-color: #348F50 !important;
+    background-color: #348F50 !important;
+}
+
+.ui.green.button
+{
+    background-color: #348F50 !important;
+}
+
+.ui.basic.green.button
+{
+    background-color: transparent !important;
+    box-shadow: 0 0 0 1px #348F50 inset !important;
+    color: #348F50 !important;
+}
+
+i.green.icon {
+    color: #348F50 !important;
+}
+
+.ui.green.text
+{
+    color: #348F50;
+}
+
+
+.ui.teal.button
+{
+    background-color: #48a59d !important;
+}
+
+.ui.teal.text
+{
+    color: #48a59d;
+}
+
+
+.ui.blue.label
+{
+    border-color: #56B4D3 !important;
+    background-color: #56B4D3 !important;
+}
+
+.ui.blue.button
+{
+    background-color: #56B4D3 !important;
+}
+
+.ui.basic.blue.button
+{
+    background-color: transparent !important;
+    box-shadow: 0 0 0 1px #56B4D3 inset !important;
+    color: #56B4D3 !important;
+}
+
+i.blue.icon {
+    color: #56B4D3 !important;
+}
+
+.ui.blue.text
+{
+    color: #56B4D3;
 }
