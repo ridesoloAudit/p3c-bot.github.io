@@ -93,6 +93,7 @@ background: linear-gradient(to left, #56B4D3, #348F50) !important; /* W3C, IE 10
 }
 
 .opacity {
+    margin-right: 10px;
     background-color: rgba(0,0,0,.2);
     padding:10px;
     border-radius:5px;
