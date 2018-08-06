@@ -31,30 +31,21 @@
                                 <i class="ethereum icon"></i>
                                 <span>Contract:&nbsp;</span>
                             </strong>
-                            <span id="ethInContract">0 ETC</span>
+                            <span id="ethInContract">0.0000 ETC</span>
                         </div>
                     </a>
-                </div>
-                <div class="item">
                     <div class="opacity">
                         <strong>
                             <i class="rocket icon"></i>
                             <span>Tokens:&nbsp;</span>
                         </strong>
-                        <span id="tokensInCirculation">0</span> P3C</div>
+                        <span id="tokensInCirculation">0.0</span> P3C</div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="ui container margin top two">
-
-        <div class="ui active inverted dimmer" id="loadingSpinner">
-            <div class="ui massive text loader" id="loadingText">Connecting with Saturn...
-                <br>
-                <noscript>You need to enable JavaScript to run this app.</noscript>
-            </div>
-        </div>
 
         <div class="ui stackable grid">
 
@@ -78,8 +69,8 @@
                     <div class="ui positive button price no click">
                         <i class="ethereum icon"></i>
                         <strong>
-                            <span class="buyPrice" id="tokenBuyGet">0</span>
-                            <span class="ui green text small eleven"> | $</span> <span class="ui green text small eleven" id="tokenBuyPrice">0</span>
+                            <span class="buyPrice" id="tokenBuyGet">0.0000</span>
+                            <span class="ui green text small eleven"> | $</span> <span class="ui green text small eleven" id="tokenBuyPrice">0.00</span>
                         </strong>
                     </div>
                 </div>
@@ -114,9 +105,9 @@
                         <h2 class="ui header">
                             My Tokens
                             <div class="sub header">
-                                <span class="count">0</span> P3C
+                                <span class="count">0.0000</span> P3C
                                 <div class="ui teal text small eleven">
-                                    <span class="converted" style="font-weight:bold;">$0<span>
+                                    <span class="converted" style="font-weight:bold;">(0.00 USDT)<span>
                                 </div>
                             </div>
                         </h2>
@@ -125,9 +116,9 @@
                         <h2 class="ui header">
                             My Dividends
                             <div class="sub header">
-                                <span class="count">0</span> ETC
+                                <span class="count">0.0000</span> ETC
                                 <div class="ui teal text small eleven">
-                                    <span class="converted" style="font-weight:bold;">$0<span>
+                                    <span class="converted" style="font-weight:bold;">(0.00 USDT)<span>
                                 </div>
                             </div>
                         </h2>
@@ -163,8 +154,8 @@
                     <div class="ui button price no click">
                         <i class="ethereum icon"></i>
                         <strong>
-                            <span class="sellPrice" id="tokenSellGet">0</span>
-                            <span class="ui blue text small eleven"> | $</span> <span class="ui blue text small eleven" id="tokenSellPrice">0</span>
+                            <span class="sellPrice" id="tokenSellGet">0.0000</span>
+                            <span class="ui blue text small eleven"> | $</span> <span class="ui blue text small eleven" id="tokenSellPrice">0.00</span>
                         </strong>
                     </div>
                 </div>
@@ -302,12 +293,24 @@
                         </p>
                     </div>
                 </div>
-        
+
             </div>
         </div>
 
     </div>
 
+    <div class="ui active dimmer" id="loadingSpinner">
+        <div class="ui massive text loader" id="loadingText">
+            <div class="content">
+                <h2 class="ui inverted header">Connecting with Saturn...</h2>
+                <a href="https://p3c.hostedwiki.co/pages/P3C%20-%20Explained#how-to-start-playing" class="ui right labeled large icon green button">
+                    <i class="question circle outline icon"></i>
+                    What is Saturn and why I need this?
+                </a>
+                <noscript><h2 class="ui inverted header">You need to enable JavaScript to run this app.</h2></noscript>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
