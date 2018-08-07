@@ -205,3 +205,7 @@ i.blue.icon {
 .green {
     color: #61c87a;
 }
+
+.ui.dimmer {
+    background-color: rgba(0,0,0,.60)
+}
