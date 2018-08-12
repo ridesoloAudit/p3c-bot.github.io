@@ -1,6 +1,5 @@
 # p3c-bot.github.io
 P3C Interface. 
 
-1. ```npm install http-server -g ```
-2. Run ```http-server``` from directory.
-3. Go to URL in browser.
+1. ```npm install -g live-server```
+2. Run ```live-server``` from directory.
