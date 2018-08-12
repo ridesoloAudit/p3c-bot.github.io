@@ -39,7 +39,7 @@
             </div>
             <br>
             <div class="ui container vertical stripe">
-                <h1 class="ui header center aligned">We believe in <i>Ubiquitous Basic Income</i>. And we've launched.</h1>
+                <h1 class="ui header center aligned">We believe in <i>Ubiquitous Basic Income</i>. And we're live, guys...</h1>
                 <div class="ui vertical stripe features">
                     <div class="ui equal width stackable grid">
                         <div class="center aligned row">
@@ -79,7 +79,7 @@
             </div>
             <div class="ui masthead vertical center aligned segment">
                     <div class="ui text container jumbotron">
-                        <img width="350" height="350" class="logo" src="/img/phoenix-small.gif" alt="EtcPyramid Logo">
+                        <img width="350" height="350" class="logo" src="/img/phoenix-small.gif" alt="Phoenix">
                     </div>
             </div>
             <br>
@@ -92,8 +92,10 @@
                                 <div class="icon-main">
                                     <i class="fas fa-exchange-alt"></i>
                                 </div>
-                                <h3>1. Get <a href="https://trustwalletapp.com/" title="">Saturn</a> (Dekstop) or <a href="https://trustwalletapp.com/" title="">Trust</a> (Phone)</h3>
+                                <h3>1. Get <a target="_blank" href="https://trustwalletapp.com/" title="">Saturn</a> (Dekstop) or <a href="https://trustwalletapp.com/" title="">Trust</a> (Phone)</h3>
                                 <hr class="line">
+                                <p>Make sure you keep your seedwords safe! Saturn wallet and Metamask cannot run at the same time. See here for <a target="_blank" href="https://p3c.hostedwiki.co/pages/P3C%20-%20Explained#how-to-start-playing">help</a></p> 
+                                <img class="logo" src="/img/landing/disable.png" alt="Disable">
                             </div>
                             <div class="column">
                                 <div class="icon-main">
@@ -101,13 +103,17 @@
                                 </div>
                                 <h3>2. Acquire Ethereum Classic</h3>
                                 <hr class="line">
+                                <p> Once you have your Ethereum Classic Wallet installed, you need Ethereum Classic (ETC). Reload this page. We recommend exchannging your coins on Shapeshift, or using an exchange like Binance.</p>
+                                <a id="shapeshift" onclick="shapeshift_click(this, event);" href=""><img style="margin-top:10px; margin-left: auto; margin-right: auto; display: block" src="https://shapeshift.io/images/shifty/small_light_altcoins.png" class="ss-button"></a>    
                             </div>
                             <div class="column">
                                 <div class="icon-main">
                                     <i class="fas fa-sync-alt"></i>
                                 </div>
-                                <h3>3. Navigate to the Dashboard</h3>
+                                <h3>3. Navigate to the <a target="_blank" href="/index.html" title="">Dashboard</a></h3>
                                 <hr class="line">
+                                <p>You can manage your holdings and purchase P3C via <a target="_blank" href="/index.html">the dashboard.</a></p> 
+                                <img width="350" height="350" class="logo" src="/img/landing/new-buy.png" alt="Buy">
                             </div>
                         </div>
                     </div>
@@ -168,20 +174,20 @@
                 </div>
             </div>
             <br>
-            <div class="ui inverted vertical footer segment">
+            <div class="ui inverted vertical footer segment gradient emerald">
                 <div class="ui container">
                     <div class="ui stackable inverted divided equal height stackable grid">
                         <div class="three wide column">
                             <div class="ui inverted link list">
-                                <a class="item" href="http://etcpyramid.us/index.html">Home</a>
-                                <a class="item" href="http://etcpyramid.us/Dashboard">Dashboard</a>
+                                <a class="item" href="http://p3c.io/home.html">Home</a>
+                                <a class="item" href="http://p3c.io/">Dashboard</a>
                             </div>
                         </div>
                         <div class="three wide column">
                             <h4 class="ui inverted header">Social</h4>
                             <div class="ui inverted link list">
-                                <a href="https://twitter.com/p3c_io" target="_blank" class="item">Twitter</a>
                                 <a href="https://discord.gg/crjsdJr" target="_blank" class="item">Discord</a>
+                                <a href="https://twitter.com/p3c_io" target="_blank" class="item">Twitter</a>
                             </div>
                         </div>
                         <div class="ten wide column">
@@ -197,13 +203,14 @@
             </div>
         </div>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
+        <script src="lib/shapeshift.js"></script>
 </body>
 
 </html>
