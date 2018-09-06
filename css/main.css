@@ -214,6 +214,13 @@ i.blue.icon {
     text-align: center;
 }
 
+.changelly {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
     [class*="mobile hidden"],
@@ -267,3 +274,4 @@ i.blue.icon {
     [class*="large screen only"]:not([class*="widescreen"]),
     [class*="widescreen hidden"]
   }
+

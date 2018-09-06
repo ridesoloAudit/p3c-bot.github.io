@@ -125,10 +125,7 @@
                             <hr class="line">
                             <p> Once you have your Ethereum Classic Wallet installed, you need Ethereum Classic (ETC). Reload
                                 this page. We recommend exchanging your coins on Shapeshift, or using an exchange like Binance.</p>
-                            <a id="shapeshift" onclick="shapeshift_click(this, event);" href="">
-                                <img style="margin-top:10px; margin-left: auto; margin-right: auto; display: block" src="https://shapeshift.io/images/shifty/small_light_altcoins.png"
-                                    class="ss-button">
-                            </a>
+                            <link rel="stylesheet" href="https://changelly.com/widget.css"/> <a id="changellyButton" href="https://changelly.com/widget/v1?auth=email&from=ETH&to=ETC&merchant_id=5nyu40p1vkzlp7hr&address=&amount=.3&ref_id=5nyu40p1vkzlp7hr&color=348F50" target="_blank"> <img class="changelly" src="https://changelly.com/pay_button_exchange.png" /> </a> <div id="changellyModal"> <div class="changellyModal-content"> <span class="changellyModal-close">x</span> <iframe id="changellyIframe" src="https://changelly.com/widget/v1?auth=email&from=ETH&to=ETC&merchant_id=5nyu40p1vkzlp7hr&address=&amount=.3&ref_id=5nyu40p1vkzlp7hr&color=61c87a" width="600" height="500" class="changelly" scrolling="no" style="overflow-y: hidden; border: none" > Can't load widget </iframe> </div> <script type="text/javascript"> var changellyModal = document.getElementById('changellyModal'); var changellyButton = document.getElementById('changellyButton'); var changellyCloseButton = document.getElementsByClassName('changellyModal-close')[0]; changellyCloseButton.onclick = function() { changellyModal.style.display = 'none'; }; changellyButton.onclick = function widgetClick(e) { e.preventDefault(); changellyModal.style.display = 'block'; }; </script> </div>        
                         </div>
                         <div class="column">
                             <div class="icon-main">
@@ -241,7 +238,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
     <script src="lib/ls.js"></script>
     <script src="lib/home.js"></script>
-    <script src="lib/shapeshift.js"></script>
+    <script src="lib/changelly.js"></script>
 </body>
 
 </html>
