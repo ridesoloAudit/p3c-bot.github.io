@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>P3C.IO</title>
+    <title>P3C.io</title>
     <meta charset="utf8">
     <meta name="description" content="Planetary Propserity Project. Universal Basic Income on Ethereum Classic">
     <meta name="keywords" content="ETC Dapps,Ethereum Classic, ETC, Universal Basic Income Dapp, UBI Dapp, UBI Ethereum, Universal Basic income Ethereum">
@@ -113,7 +113,8 @@
                             <div class="sub header">
                                 <span class="count">0.0000</span> P3C
                                 <div class="ui teal text small eleven">
-                                    <span class="converted" style="font-weight:bold;">(0.00 USDT)<span><span class="converted" style="font-weight:bold;">(0.00 USDT)<span></span>
+                                    <span id="convertedETC" style="font-weight:bold;">(0.00 ETC)</span>
+                                    <span id="converted" class="converted" style="font-weight:bold;">(0.00 USDT)</span>
                                 </div>
                             </div>
                         </h2>
@@ -363,7 +364,8 @@
 
                     $("#tokenBuyPrice").text(tokenBuyPrice)
                     $("#tokenSellPrice").text(tokenSellPrice)
-
+                    var ETCValue = $( "#converted" ).html().match(/[+-]?\d+(?:\.\d+)?/g).map(Number) / USETC
+                    $("#convertedETC").text("("+ ETCValue.toFixed(2) + " ETC)")
                 });
             }
 
