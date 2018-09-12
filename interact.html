@@ -113,7 +113,7 @@
                             <div class="sub header">
                                 <span class="count">0.0000</span> P3C
                                 <div class="ui teal text small eleven">
-                                    <span id="convertedETC" style="font-weight:bold;">(0.00 ETC)</span>
+                                    <span id="convertedETC" style="font-weight:bold;">0.00 ETC</span>
                                     <span id="converted" class="converted" style="font-weight:bold;">(0.00 USDT)</span>
                                 </div>
                             </div>
@@ -367,7 +367,7 @@
                     $("#tokenSellPrice").text(tokenSellPrice)
                     if ($("#convertedETC" ).html() !== 'undefined'){
                       var ETCValue = $( "#converted" ).html().match(/[+-]?\d+(?:\.\d+)?/g).map(Number) / USETC
-                      $("#convertedETC").text("("+ ETCValue.toFixed(2) + " ETC)")
+                      $("#convertedETC").text(ETCValue.toFixed(2) + " ETC")
                     }
                 });
             }
