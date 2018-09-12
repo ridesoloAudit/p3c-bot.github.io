@@ -113,7 +113,7 @@
                             <div class="sub header">
                                 <span class="count">0.0000</span> P3C
                                 <div class="ui teal text small eleven">
-                                    <span id="convertedETC" style="font-weight:bold;">0.00 ETC</span>
+                                    <span id="convertedETC" style="font-weight:bold;"></span>
                                     <span id="converted" class="converted" style="font-weight:bold;">(0.00 USDT)</span>
                                 </div>
                             </div>
@@ -351,6 +351,7 @@
 
     <script>
         $(document).ready(function () {
+            var converted = false
             function refreshPrice() {
                 $.getJSON('https://min-api.cryptocompare.com/data/price?fsym=ETC&tsyms=USDT', function (json) {
 
@@ -365,7 +366,8 @@
 
                     $("#tokenBuyPrice").text(tokenBuyPrice)
                     $("#tokenSellPrice").text(tokenSellPrice)
-                    if ($("#convertedETC" ).html() !== 'undefined'){
+                    if ($("#convertedETC" ).html() !== 'undefined' && !converted){
+                      converted = true;
                       var ETCValue = $( "#converted" ).html().match(/[+-]?\d+(?:\.\d+)?/g).map(Number) / USETC
                       $("#convertedETC").text(ETCValue.toFixed(2) + " ETC")
                     }
