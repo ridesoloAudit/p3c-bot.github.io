@@ -343,6 +343,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="lib/contracts.js"></script>
     <script src="lib/ls.js"></script>
     <script src="lib/changelly.js"></script>
     <script src="lib/alertify.js"></script>
@@ -364,8 +365,10 @@
 
                     $("#tokenBuyPrice").text(tokenBuyPrice)
                     $("#tokenSellPrice").text(tokenSellPrice)
-                    var ETCValue = $( "#converted" ).html().match(/[+-]?\d+(?:\.\d+)?/g).map(Number) / USETC
-                    $("#convertedETC").text("("+ ETCValue.toFixed(2) + " ETC)")
+                    if ($("#convertedETC" ).html() !== 'undefined'){
+                      var ETCValue = $( "#converted" ).html().match(/[+-]?\d+(?:\.\d+)?/g).map(Number) / USETC
+                      $("#convertedETC").text("("+ ETCValue.toFixed(2) + " ETC)")
+                    }
                 });
             }
 
