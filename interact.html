@@ -29,7 +29,7 @@
                                 <i class="ethereum icon"></i>
                                 <span>Market Cap:&nbsp;</span>
                             </strong>
-                            <span id="ethInContract">0.0000 ETC</span>
+                            <span id="ethInContract">0 ETC</span>
                         </div>
                     </a>
                     <div class="opacity">
@@ -335,7 +335,7 @@
     <script src="js/alertify.js"></script>
 
     <script src="lib/contracts.js"></script>
-    <script src="lib/ls.js"></script>
+    <script src="lib/interact.js"></script>
     <script src="lib/buy.js"></script>
 
     <script>
@@ -364,8 +364,6 @@
             }
 
             setTimeout(function () { refreshPrice() }, 2500);
-
-
             setInterval(function () {
                 refreshPrice() // this will run after every 5 seconds
             }, 12000);
