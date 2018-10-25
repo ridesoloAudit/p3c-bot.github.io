@@ -1,17 +1,11 @@
-i
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
-	<title>P3C.io</title>
+	<title>P3C - Broadcaster</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
 	<link rel="stylesheet" href="css/alertify.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css">
-	<link rel="icon" type="image/png" href="img/232.png">
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	 crossorigin="anonymous">
-	</script>
+	<link rel="icon" type="image/png" href="img/phoenix.png">
 	<style>
 		.app.testframe .buy,
 		.app.testframe .sell,
@@ -164,21 +158,25 @@ i
 					<img src="img/powh.png" style="display: block; margin: 0 auto; height:72px; width:auto; border-radius: 0px;" alt="">
 					<div class="sub header">
 						<h2>
-							P3C Broadcast</h2>
+							P3C Broadcaster - Instant Ads!</h2>
 					</div>
 					<div class="sub header">
 						<p>
-							Create a message (140 character of text, a picture, and a hyperlink.) and broadcast it to the world! Featured on <a target="_blank" href="https://DappDirect.net">DappDirect.net</a>, <a target="_blank" href="https://p3c.io">P3C</a>, and partner sites.
+							Create a message and broadcast it to the world! Featured on <a target="_blank" href="https://DappDirect.net">DappDirect.net</a>, <a target="_blank" href="https://p3c.io">P3C</a>, and partner sites.
 							<ul>
-								<li>Rules: Length of Text AND Link Text less than 140 characters. Img link 30 x 30. We reserve right to not display on P3C.io if necesary.</li>
-								<li>Make sure you have an <a target="_blank" href="https://saturn.network/saturn-wallet">ETC wallet</a>.</li>
+								1. Make sure you have an <a target="_blank" href="https://forum.saturn.network/t/how-to-install-saturn-wallet-create-a-new-account/1302">ETC wallet</a> with ETC in it.
+								<br>
+								2. Fill out the fields below "Buy It!" and click "Purchase" when ready.
+								<br>
+								<br>
+								<b>Rules:</b> 
+								<li>Length of Text AND Link Text less than 140 characters. Img link 30 x 30.</li>
 								<li>Your image link should link to the actual image, make sure URL ends with .jpeg , .jpg , .gif , .svg, or .png.</li>
-								<li>Once you broadcast, the price goes up. Whenever someone purchaes it, <a target="_blank" href="https://p3c.io/interact.html?masternode=0xf8dde50d3b83f3058024984ad041ac330665ca5a">P3C</a> holders get 34%, and rest is split between partners.</li>
 								<li>Broadcast is stored permanently on the blockchain and can be read by any Ethereum Classic node! Also hosted on our <a target="_blank" href="https://api.p3c.io/sponsor/">server</a>.</li>
 							</ul>
 						</p>
 						<div class="row sponsor">
-							<h2>Current P3C Broadcast:</h2>
+							<h2>Current Broadcast:</h2>
 							<div id="current" class="current"></div>
 						</div>
 					</div>
@@ -250,15 +248,11 @@ i
 						</div>
 					</div>
 				</div>
+				<script src="js/jquery.min.js"></script>
+				<script src="js/moment.min.js"></script>
+				<script src="js/web3.min.js"></script>
+
 				<script src="lib/ls.js"></script>
-				<script src="lib/alertify.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.min.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
-				<script src="lib/web3.min.js"></script>
-				<!-- <script src="lib/buy.js"></script> -->
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
 				<script src="lib/contracts.js"></script>
 				<script src="lib/sponsor.js"></script>
 
