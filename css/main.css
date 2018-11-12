@@ -3,6 +3,15 @@ body
     color: rgba(0,0,0,.7) !important;
 }
 
+.clock {
+    display: inline-block;
+    width: auto;
+    margin: 1em;
+}
+ .clock-container {
+    text-align: center;
+}
+
 .ui.header { color: #34495e; }
 .ui.table { color: rgba(0,0,0,.65); }
 .ui.table thead th { color: #7f8c8e; }
@@ -209,3 +218,69 @@ i.blue.icon {
 .ui.dimmer {
     background-color: rgba(0,0,0,.60)
 }
+
+.sponsor {
+    text-align: center;
+}
+
+.changelly {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    [class*="mobile hidden"],
+    [class*="tablet only"]:not(.mobile),
+    [class*="custom-computer only"]:not(.mobile),
+    [class*="large screen only"]:not(.mobile),
+    [class*="widescreen only"]:not(.mobile),
+    [class*="or lower hidden"] {
+      display: none !important;
+    }
+  }
+  
+  /* Tablet / iPad Portrait */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    [class*="mobile only"]:not(.tablet),
+    [class*="tablet hidden"],
+    [class*="custom-computer only"]:not(.tablet),
+    [class*="large screen only"]:not(.tablet),
+    [class*="widescreen only"]:not(.tablet),
+    [class*="or lower hidden"]:not(.mobile) {
+      display: none !important;
+    }
+  }
+  
+  /* custom-computer / Desktop / iPad Landscape */
+  @media only screen and (min-width: 992px) {
+    [class*="mobile only"]:not(.custom-computer),
+    [class*="tablet only"]:not(.custom-computer),
+    [class*="custom-computer hidden"],
+    [class*="large screen only"]:not(.custom-computer),
+    [class*="widescreen only"]:not(.custom-computer),
+    [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+      display: none !important;
+    }
+  }
+  
+  /* Large Monitor */
+  @media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    [class*="mobile only"]:not([class*="large screen"]),
+    [class*="tablet only"]:not([class*="large screen"]),
+    [class*="custom-computer only"]:not([class*="large screen"]),
+    [class*="large screen hidden"],
+    [class*="widescreen only"]:not([class*="large screen"]),
+  }
+  
+  /* Widescreen Monitor */
+  @media only screen and (min-width: 1920px) {
+    [class*="mobile only"]:not([class*="widescreen"]),
+    [class*="tablet only"]:not([class*="widescreen"]),
+    [class*="custom-computer only"]:not([class*="widescreen"]),
+    [class*="large screen only"]:not([class*="widescreen"]),
+    [class*="widescreen hidden"]
+  }
+
